@@ -22,7 +22,14 @@ function armario(){
   $('#contagem').textContent = `${n} ${n===1?'peça':'peças'}`;
   if(!estado.pecas.length){ $('#grade').innerHTML = vazio('🧥','Seu armário ainda está vazio.','Mande a foto da sua primeira peça pro Estilo.'); $('#grade').style.display='block'; return; }
   $('#grade').style.display='';
-  $('#grade').innerHTML = n ? lista.map(p => `<button class="card" data-id="${esc(p.id)}"><div class="foto"><img src="${esc(p.foto)}" alt="${esc(p.nome)}" loading="lazy"></div><div class="nome">${esc(p.nome)}</div></button>`).join('')
+  $('#grade').innerHTML = n ? lista.map(p => {
+    const st = p.status ? `<span class="selo selo-status ${/guarda/i.test(p.status)?'claro':''}">${esc(p.status)}</span>` : '';
+    const qt = p.quantidade ? `<span class="selo selo-qtd">${esc(p.quantidade)}</span>` : '';
+    const linha = [p.cor ? `<span class="bolinha" style="background:${esc(p.cor_hex||'#888')}"></span>${esc(p.cor)}` : '', esc(p.tamanho)].filter(Boolean).join('<span class="sep">·</span>');
+    return `<button class="card" data-id="${esc(p.id)}"><div class="foto">${st}<img src="${esc(p.foto)}" alt="${esc(p.nome)}" loading="lazy">${qt}</div>
+      <div class="info">${p.marca?`<div class="marca">${esc(p.marca)}</div>`:''}<div class="nome">${esc(p.nome)}</div>
+      ${linha?`<div class="linha">${linha}</div>`:''}${p.tecido?`<div class="tecido">${esc(p.tecido)}</div>`:''}</div></button>`;
+  }).join('')
     : `<div style="grid-column:1/-1">${vazio('🔍','Nada por aqui.','Nenhuma peça com esses filtros.')}</div>`;
 }
 
@@ -36,7 +43,7 @@ function looks(){
   }).join('');
 }
 
-const ROTULOS = [['categoria','Categoria'],['cor','Cor'],['marca','Marca'],['tamanho','Tamanho'],['tecido','Tecido'],['data_compra','Data da compra'],['link','Link'],['observacoes','Observações']];
+const ROTULOS = [['categoria','Categoria'],['cor','Cor'],['marca','Marca'],['status','Status'],['quantidade','Quantidade'],['tamanho','Tamanho'],['tecido','Tecido'],['data_compra','Data da compra'],['link','Link'],['observacoes','Observações']];
 function abrir(id){
   const p = estado.pecas.find(x => x.id===id); if(!p) return;
   const fmt = (k,v) => k==='link' ? `<a href="${esc(v)}" target="_blank" rel="noopener">Ver produto</a>`

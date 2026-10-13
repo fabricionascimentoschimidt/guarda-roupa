@@ -11,7 +11,8 @@
     "link": "https://produto.mercadolivre.com.br/MLB-5556430056-camiseta-modal-masculina-basica-loja-mirante-_JM",
     "foto": "img/camiseta-modal-preta.png",
     "data_compra": "2025-11",
-    "observacoes": "Gostou. 92% modal, 8% elastano, 200 g/m², UV 50+. Pode encolher 3-4%. Medidas M: tórax 54, comprimento 73, barra 51, ombro 14 (só a costura), manga 18, abertura da manga 17 cm. Um pouco mais larga e comprida que a Classic M (52/71)."
+    "observacoes": "Gostou. 92% modal, 8% elastano, 200 g/m², UV 50+. Pode encolher 3-4%. Medidas M: tórax 54, comprimento 73, barra 51, ombro 14 (só a costura), manga 18, abertura da manga 17 cm. Um pouco mais larga e comprida que a Classic M (52/71).",
+    "status": "No guarda-roupa"
   },
   {
     "id": "meias-performance-pretas",
@@ -25,7 +26,9 @@
     "link": "https://shopee.com.br/Kit-3-Pares-Meia-Performance-Poliamida-Unissex-Cano-Curto-Soquete-Esportiva-Corrida-Ciclismo-i.920749716.20797996300",
     "foto": "img/meias-performance-pretas.png",
     "data_compra": "2026-10",
-    "observacoes": "Kit com 3 pares, cano curto, esportiva, pretas com calcanhar e ponta cinza."
+    "observacoes": "Kit com 3 pares, cano curto, esportiva, pretas com calcanhar e ponta cinza.",
+    "status": "No guarda-roupa",
+    "quantidade": "3 pares"
   },
   {
     "id": "short-preto-ziper",
@@ -33,12 +36,13 @@
     "categoria": "Bermudas",
     "cor": "Preto",
     "cor_hex": "#111111",
-    "marca": "Sem marca (Shopee)",
+    "marca": "Sem marca",
     "tamanho": "",
     "tecido": "Poliéster (tipo dry fit)",
     "link": "https://shopee.com.br/KIT-2-SHORTS-BERMUDA-COM-ZIPER-NO-BOLSO-i.1242284455.22093439983",
     "foto": "img/short-preto-ziper.png",
     "data_compra": "2026-10",
-    "observacoes": "Qualidade e acabamento muito ruins, tamanho sem padrão (o azul do kit veio bem menor e foi doado). Usa por enquanto. Não comprar mais dessa loja."
+    "observacoes": "Qualidade e acabamento muito ruins, tamanho sem padrão (o azul do kit veio bem menor e foi doado). Usa por enquanto. Não comprar mais dessa loja.",
+    "status": "No guarda-roupa"
   }
 ]
