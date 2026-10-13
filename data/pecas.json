@@ -12,7 +12,8 @@
     "foto": "img/camiseta-modal-preta.png",
     "data_compra": "2025-11",
     "observacoes": "Gostou. 92% modal, 8% elastano, 200 g/m², UV 50+. Pode encolher 3-4%. Medidas M: tórax 54, comprimento 73, barra 51, ombro 14 (só a costura), manga 18, abertura da manga 17 cm. Um pouco mais larga e comprida que a Classic M (52/71).",
-    "status": "No guarda-roupa"
+    "status": "No guarda-roupa",
+    "uso": "Casa e rua"
   },
   {
     "id": "meias-performance-pretas",
@@ -28,7 +29,8 @@
     "data_compra": "2026-10",
     "observacoes": "Kit com 3 pares, cano curto, esportiva, pretas com calcanhar e ponta cinza.",
     "status": "No guarda-roupa",
-    "quantidade": "3 pares"
+    "quantidade": "3 pares",
+    "uso": "Academia"
   },
   {
     "id": "short-preto-ziper",
@@ -43,7 +45,8 @@
     "foto": "img/short-preto-ziper.png",
     "data_compra": "2026-10",
     "observacoes": "Qualidade e acabamento muito ruins, tamanho sem padrão (o azul do kit veio bem menor e foi doado). Usa por enquanto. Não comprar mais dessa loja.",
-    "status": "No guarda-roupa"
+    "status": "No guarda-roupa",
+    "uso": "Casa e rua"
   },
   {
     "id": "camiseta-hering-azul",
@@ -58,7 +61,8 @@
     "foto": "img/camiseta-hering-azul.png",
     "data_compra": "",
     "observacoes": "Ref. 140MAZ2EN. Modelagem regular (mais reta e rente ao corpo), gola redonda, malha H+ antiodor/antimicrobiana, secagem rápida, não amassa fácil. Medidas M (Hering): comprimento 73 cm, largura 54 cm, manga 23 cm (ombro não informado). Vs. referência Classic M (71/52/48/16): +2 cm comprimento, +2 cm largura. Lavar até 30 °C, não usar secadora. Comprada no kit com 3 camisetas Hering (azul, azul e verde).",
-    "status": "A caminho"
+    "status": "A caminho",
+    "uso": "Casa e rua"
   },
   {
     "id": "camiseta-hering-azul-x7",
@@ -73,7 +77,8 @@
     "foto": "img/camiseta-hering-azul-x7.png",
     "data_compra": "",
     "observacoes": "Ref. 140MAX7EN (variante X7). Azul bem escuro, quase marinho/arroxeado. Modelagem regular (mais reta e solta do corpo), gola redonda, malha H+ antiodor/antimicrobiana, secagem rápida, não amassa fácil. Medidas M (Hering): comprimento 73 cm, largura 54 cm, manga 23 cm (ombro não informado). Vs. referência Classic M (71/52/48/16): +2 cm comprimento, +2 cm largura. Sem foto still da variante no site; imagem recortada da foto com modelo. Comprada no kit com 3 camisetas Hering (azul, azul e verde).",
-    "status": "A caminho"
+    "status": "A caminho",
+    "uso": "Casa e rua"
   },
   {
     "id": "camiseta-hering-verde",
@@ -88,7 +93,8 @@
     "foto": "img/camiseta-hering-verde.png",
     "data_compra": "",
     "observacoes": "Ref. 140MNATEN. Verde bem escuro, puxado para oliva/cinza-musgo. Modelagem regular (mais reta e rente ao corpo), gola redonda, malha H+ antiodor/antimicrobiana, secagem rápida, não amassa fácil. Medidas M (Hering): comprimento 73 cm, largura 54 cm, manga 23 cm (ombro não informado). Vs. referência Classic M (71/52/48/16): +2 cm comprimento, +2 cm largura. Comprada no kit com 3 camisetas Hering (azul, azul e verde).",
-    "status": "A caminho"
+    "status": "A caminho",
+    "uso": "Casa e rua"
   },
   {
     "id": "tenis-ua-tribase-reps",
@@ -103,11 +109,12 @@
     "foto": "img/tenis-ua-tribase-reps.png",
     "data_compra": "",
     "observacoes": "Tênis de treino (cross-training/funcional), pisada neutra, forro poliéster com espuma, cadarço achatado, puxador no calcanhar. Peso informado: 269–305 g (varia por tamanho/loja). Specs de underarmour.com.br/Shoestock/Trilha (Netshoes bloqueou acesso).",
-    "status": "A caminho"
+    "status": "A caminho",
+    "uso": "Academia"
   },
   {
     "id": "bermuda-domyos-fst100-preta",
-    "nome": "Domyos FST 100 (treino)",
+    "nome": "Domyos FST 100",
     "categoria": "Bermudas",
     "cor": "Preto",
     "cor_hex": "#19171a",
@@ -118,11 +125,12 @@
     "foto": "img/bermuda-domyos-fst100-preta.png",
     "data_compra": "",
     "observacoes": "Ref. 8506243 (Decathlon). Modelagem justa (a loja recomenda um tamanho acima). Tamanho G = quadril 97–103 cm (tabela da Decathlon; sem medidas da peça informadas). Cós elástico com cordão interno, 2 bolsos laterais, leve, secagem rápida, elimina transpiração. Sem foto still no site; imagem recortada da foto frontal com modelo.",
-    "status": "A caminho"
+    "status": "A caminho",
+    "uso": "Academia"
   },
   {
     "id": "camiseta-run100-dry-preta",
-    "nome": "Kiprun Run 100 Dry (treino)",
+    "nome": "Kiprun Run 100 Dry",
     "categoria": "Camisetas",
     "cor": "Preto",
     "cor_hex": "#1d1d1d",
@@ -134,7 +142,8 @@
     "foto": "img/camiseta-run100-dry-preta.png",
     "data_compra": "",
     "observacoes": "Uso: academia. 2 peças iguais. Ref. 8985259. Comprimento regular, gola redonda, tecido leve e respirável. Tamanho G = tórax 100–104 cm, cintura 85–89 cm (tabela corporal da Decathlon; medidas da peça não informadas). Lavar até 30 °C, sem alvejante, secadora ou ferro.",
-    "status": "A caminho"
+    "status": "A caminho",
+    "uso": "Academia"
   },
   {
     "id": "camiseta-sandrini-preta",
@@ -149,7 +158,8 @@
     "foto": "img/camiseta-sandrini-preta.png",
     "data_compra": "",
     "observacoes": "Kit 3 Camisetas Básicas Day (ref. 2025), lisa sem logo frontal, gola redonda, manga curta, modelagem padrão brasileira. Malha 100% algodão de fibra média, ~143 g/m² (120–160 conforme a cor), pré-lavada, costuras reforçadas. Medidas da peça no M (tabela Sandrini): comprimento 70 cm, manga 20 cm, ombro a ombro 50 cm; largura não informada. Vs. referência Classic M (71/52/48/16): comprimento −1 cm, ombro +2 cm, manga +4 cm. Lavar em ciclo suave com cores semelhantes, sem alvejante, sem lavar a seco, secar à sombra, passar do avesso em temperatura baixa, evitar secadora. Comprada no kit com 3 camisetas (preta, branca e marinho).",
-    "status": "A caminho"
+    "status": "A caminho",
+    "uso": "Casa e rua"
   },
   {
     "id": "camiseta-sandrini-branca",
@@ -164,7 +174,8 @@
     "foto": "img/camiseta-sandrini-branca.png",
     "data_compra": "",
     "observacoes": "Kit 3 Camisetas Básicas Day (ref. 2025), lisa sem logo frontal, gola redonda, manga curta, modelagem padrão brasileira. Malha 100% algodão de fibra média, ~143 g/m² (120–160 conforme a cor), pré-lavada, costuras reforçadas. Medidas da peça no M (tabela Sandrini): comprimento 70 cm, manga 20 cm, ombro a ombro 50 cm; largura não informada. Vs. referência Classic M (71/52/48/16): comprimento −1 cm, ombro +2 cm, manga +4 cm. Lavar em ciclo suave com cores semelhantes, sem alvejante, sem lavar a seco, secar à sombra, passar do avesso em temperatura baixa, evitar secadora. Comprada no kit com 3 camisetas (preta, branca e marinho).",
-    "status": "A caminho"
+    "status": "A caminho",
+    "uso": "Casa e rua"
   },
   {
     "id": "camiseta-sandrini-marinho",
@@ -179,7 +190,8 @@
     "foto": "img/camiseta-sandrini-marinho.png",
     "data_compra": "",
     "observacoes": "Kit 3 Camisetas Básicas Day (ref. 2025), lisa sem logo frontal, gola redonda, manga curta, modelagem padrão brasileira. Malha 100% algodão de fibra média, ~143 g/m² (120–160 conforme a cor), pré-lavada, costuras reforçadas. Medidas da peça no M (tabela Sandrini): comprimento 70 cm, manga 20 cm, ombro a ombro 50 cm; largura não informada. Vs. referência Classic M (71/52/48/16): comprimento −1 cm, ombro +2 cm, manga +4 cm. Lavar em ciclo suave com cores semelhantes, sem alvejante, sem lavar a seco, secar à sombra, passar do avesso em temperatura baixa, evitar secadora. Comprada no kit com 3 camisetas (preta, branca e marinho).",
-    "status": "A caminho"
+    "status": "A caminho",
+    "uso": "Casa e rua"
   },
   {
     "id": "camiseta-lakoss-preta",
@@ -194,6 +206,7 @@
     "foto": "img/camiseta-lakoss-preta.png",
     "data_compra": "",
     "observacoes": "Peça avulsa. Gola redonda, manga curta, proteção UV FPU 50+, modelagem Slim/Regular, tecido leve sem elasticidade, costura reforçada em ombros e gola. Medidas da peça no M: ombro a ombro 42 cm, largura 52 cm, comprimento 69 cm; manga não informada. Vs. referência Classic M (71/52/48/16): comprimento −2 cm, largura igual, ombro −6 cm. Lavável na máquina; pode encolher levemente na primeira lavagem. Marca no anúncio da Amazon: 'Genérico'.",
-    "status": "A caminho"
+    "status": "A caminho",
+    "uso": "Casa e rua"
   }
 ]

@@ -1,4 +1,4 @@
-const estado = { pecas: [], looks: [], cat: 'Todas', cor: 'Todas' };
+const estado = { pecas: [], looks: [], cat: 'Todas', cor: 'Todas', uso: 'Casa e rua' };
 const CATEGORIAS = ['Camisetas','Regatas','Polos','Camisas','Bermudas','Moletons','Meias','Calçados','Acessórios'];
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -10,16 +10,18 @@ function qtd(p){ const m=String(p.quantidade||'').match(/\d+/); return m?+m[0]:1
 function vazio(icone, titulo, texto){ return `<div class="vazio"><div class="icone">${icone}</div><strong>${titulo}</strong>${texto}</div>`; }
 
 function chips(){
-  const cats = ['Todas', ...CATEGORIAS.filter(c => estado.pecas.some(p => p.categoria === c))];
+  $('#chips-uso').innerHTML = ['Casa e rua','Academia','Tudo'].map(u => `<button class="chip uso ${u===estado.uso?'ativo':''}" data-uso="${u}">${u}</button>`).join('');
+  const base = estado.pecas.filter(p => estado.uso==='Tudo'||p.uso===estado.uso);
+  const cats = ['Todas', ...CATEGORIAS.filter(c => base.some(p => p.categoria === c))];
   $('#chips-cat').innerHTML = cats.map(c => `<button class="chip ${c===estado.cat?'ativo':''}" data-cat="${esc(c)}">${esc(c)}</button>`).join('');
-  const cores = new Map(); estado.pecas.forEach(p => p.cor && cores.set(p.cor, p.cor_hex));
+  const cores = new Map(); base.forEach(p => p.cor && cores.set(p.cor, p.cor_hex));
   $('#chips-cor').innerHTML = cores.size ? [`<button class="chip ${estado.cor==='Todas'?'ativo':''}" data-cor="Todas">Todas as cores</button>`,
     ...[...cores].map(([c,h]) => `<button class="chip ${c===estado.cor?'ativo':''}" data-cor="${esc(c)}"><span class="bolinha" style="background:${esc(h||'#888')}"></span>${esc(c)}</button>`)].join('') : '';
 }
 
 function armario(){
   chips();
-  const lista = estado.pecas.filter(p => (estado.cat==='Todas'||p.categoria===estado.cat) && (estado.cor==='Todas'||p.cor===estado.cor));
+  const lista = estado.pecas.filter(p => (estado.uso==='Tudo'||p.uso===estado.uso) && (estado.cat==='Todas'||p.categoria===estado.cat) && (estado.cor==='Todas'||p.cor===estado.cor));
   const n = lista.length;
   $('#contagem').textContent = `${n} ${n===1?'peça':'peças'}`;
   if(!estado.pecas.length){ $('#grade').innerHTML = vazio('🧥','Seu armário ainda está vazio.','Mande a foto da sua primeira peça pro Estilo.'); $('#grade').style.display='block'; return; }
@@ -51,9 +53,10 @@ function abrir(id){
 function fechar(){ $('#fundo').hidden = true; $('#folha').classList.remove('aberta'); $('#folha').setAttribute('aria-hidden','true'); }
 
 document.addEventListener('click', e => {
-  const t = e.target.closest('[data-aba],[data-cat],[data-cor],[data-id]'); if(!t) return;
+  const t = e.target.closest('[data-aba],[data-uso],[data-cat],[data-cor],[data-id]'); if(!t) return;
   if(t.dataset.aba){ document.querySelectorAll('.aba').forEach(a => a.classList.toggle('ativa', a===t));
     document.querySelectorAll('.painel').forEach(s => s.hidden = s.id!==t.dataset.aba); }
+  else if(t.dataset.uso){ estado.uso = t.dataset.uso; estado.cat='Todas'; estado.cor='Todas'; armario(); }
   else if(t.dataset.cat){ estado.cat = t.dataset.cat; armario(); }
   else if(t.dataset.cor){ estado.cor = t.dataset.cor; armario(); }
   else if(t.dataset.id){ abrir(t.dataset.id); }
