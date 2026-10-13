@@ -45,3 +45,9 @@ main{max-width:900px;margin:0 auto;padding:14px}
 .campos{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:.9rem}
 .campos dt{color:var(--mute)}
 .campos a{color:var(--acc)}
+
+.card .foto{position:relative}
+.card .foto.pilha img{position:relative;z-index:1;transform:translate(-5%,4%)}
+.card .foto.pilha img.sombra{position:absolute;z-index:0;max-width:calc(100% - 20px);max-height:calc(100% - 20px);transform:translate(7%,-5%) rotate(6deg);opacity:.55;filter:brightness(.7) drop-shadow(0 6px 8px #0006)}
+.selo-qtd{position:absolute;z-index:2;right:8px;bottom:8px;background:#c9b77a;color:#1b1c15;font-weight:700;font-size:.8rem;padding:3px 9px;border-radius:999px;box-shadow:0 2px 6px #0007}
+.selo-status{position:absolute;z-index:2;left:8px;top:8px;background:#16170fcc;color:#e9e6d6;font-size:.65rem;padding:3px 8px;border-radius:999px;border:1px solid #ffffff22}

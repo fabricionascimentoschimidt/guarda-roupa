@@ -5,6 +5,8 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt
 
 async function carregar(url){ try{ const r = await fetch(url,{cache:'no-store'}); return r.ok ? await r.json() : []; }catch{ return []; } }
 
+function qtd(p){ const m=String(p.quantidade||'').match(/\d+/); return m?+m[0]:1; }
+
 function vazio(icone, titulo, texto){ return `<div class="vazio"><div class="icone">${icone}</div><strong>${titulo}</strong>${texto}</div>`; }
 
 function chips(){
@@ -22,7 +24,7 @@ function armario(){
   $('#contagem').textContent = `${n} ${n===1?'peça':'peças'}`;
   if(!estado.pecas.length){ $('#grade').innerHTML = vazio('🧥','Seu armário ainda está vazio.','Mande a foto da sua primeira peça pro Estilo.'); $('#grade').style.display='block'; return; }
   $('#grade').style.display='';
-  $('#grade').innerHTML = n ? lista.map(p => `<button class="card" data-id="${esc(p.id)}"><div class="foto"><img src="${esc(p.foto)}?v=${Date.now()}" alt="${esc(p.nome)}" loading="lazy"></div><div class="nome">${esc(p.nome)}</div></button>`).join('')
+  $('#grade').innerHTML = n ? lista.map(p => `<button class="card" data-id="${esc(p.id)}"><div class="foto${qtd(p)>1&&p.categoria!=='Meias'?' pilha':''}">${qtd(p)>1&&p.categoria!=='Meias'?`<img class="sombra" src="${esc(p.foto)}?v=${Date.now()}" alt="" aria-hidden="true">`:''}<img src="${esc(p.foto)}?v=${Date.now()}" alt="${esc(p.nome)}" loading="lazy">${p.status&&p.status!=='No guarda-roupa'?`<span class="selo-status">🚚 ${esc(p.status)}</span>`:''}${qtd(p)>1?`<span class="selo-qtd">×${qtd(p)}</span>`:''}</div><div class="nome">${esc(p.nome)}</div></button>`).join('')
     : `<div style="grid-column:1/-1">${vazio('🔍','Nada por aqui.','Nenhuma peça com esses filtros.')}</div>`;
 }
 
