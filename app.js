@@ -24,7 +24,7 @@ function armario(){
   $('#contagem').textContent = `${n} ${n===1?'peça':'peças'}`;
   if(!estado.pecas.length){ $('#grade').innerHTML = vazio('🧥','Seu armário ainda está vazio.','Mande a foto da sua primeira peça pro Estilo.'); $('#grade').style.display='block'; return; }
   $('#grade').style.display='';
-  $('#grade').innerHTML = n ? lista.map(p => `<button class="card" data-id="${esc(p.id)}"><div class="foto${qtd(p)>1&&p.categoria!=='Meias'?' pilha':''}">${qtd(p)>1&&p.categoria!=='Meias'?`<img class="sombra" src="${esc(p.foto)}?v=${Date.now()}" alt="" aria-hidden="true">`:''}<img src="${esc(p.foto)}?v=${Date.now()}" alt="${esc(p.nome)}" loading="lazy">${qtd(p)>1?`<span class="selo-qtd">×${qtd(p)}</span>`:''}</div><div class="nome">${esc(p.nome)}</div></button>`).join('')
+  $('#grade').innerHTML = n ? lista.map(p => `<button class="card" data-id="${esc(p.id)}"><div class="foto${qtd(p)>1&&p.categoria!=='Meias'?' pilha':''}">${qtd(p)>1&&p.categoria!=='Meias'?`<img class="sombra" src="${esc(p.foto)}?v=${Date.now()}" alt="" aria-hidden="true">`:''}<img src="${esc(p.foto)}?v=${Date.now()}" alt="${esc(p.nome)}" loading="lazy">${qtd(p)>1?`<span class="selo-qtd">×${qtd(p)}</span>`:''}</div><div class="nome">${esc(p.nome)}</div><div class="cor-card">${esc(p.cor||"")}${p.tamanho?" · "+esc(p.tamanho):""}</div></button>`).join('')
     : `<div style="grid-column:1/-1">${vazio('🔍','Nada por aqui.','Nenhuma peça com esses filtros.')}</div>`;
 }
 

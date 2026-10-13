@@ -51,3 +51,17 @@ main{max-width:900px;margin:0 auto;padding:14px}
 .card .foto.pilha img.sombra{position:absolute;z-index:0;max-width:calc(100% - 20px);max-height:calc(100% - 20px);transform:translate(7%,-5%) rotate(6deg);opacity:.55;filter:brightness(.7) drop-shadow(0 6px 8px #0006)}
 .selo-qtd{position:absolute;z-index:2;right:8px;bottom:8px;background:#c9b77a;color:#1b1c15;font-weight:700;font-size:.8rem;padding:3px 9px;border-radius:999px;box-shadow:0 2px 6px #0007}
 .selo-status{position:absolute;z-index:2;left:8px;top:8px;background:#16170fcc;color:#e9e6d6;font-size:.65rem;padding:3px 8px;border-radius:999px;border:1px solid #ffffff22}
+/* Tema claro neutro: valoriza as peças */
+:root{--bg:#f4f2ee;--bg2:#ffffff;--card:#ffffff;--txt:#1c1c1c;--mute:#77736b;--acc:#8a6d3b}
+.topo{background:rgba(244,242,238,.94)}
+.chip{border-color:#e2ded6}
+.chip.ativo{color:#fff}
+.card{box-shadow:0 1px 3px #0000000f,0 6px 18px #00000010}
+.card .foto{background:radial-gradient(circle at 50% 42%,#f1efeb,#e1ded7)}
+.card .nome{color:var(--txt);font-weight:600;font-size:.8rem;padding:8px 10px 0}
+.cor-card{font-size:.72rem;color:var(--mute);padding:2px 10px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.det-foto{background:radial-gradient(circle,#f1efeb,#ddd9d1)}
+.composicao{background:#efece6}
+.alca{background:#d6d2c9}
+.fundo{background:#0006}
+.selo-qtd{background:#1c1c1c;color:#fff}

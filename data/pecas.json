@@ -1,7 +1,7 @@
 [
   {
     "id": "camiseta-modal-preta",
-    "nome": "Camiseta Modal Básica",
+    "nome": "Modal Básica",
     "categoria": "Camisetas",
     "cor": "Preto",
     "cor_hex": "#111111",
@@ -16,7 +16,7 @@
   },
   {
     "id": "meias-performance-pretas",
-    "nome": "Meias Performance (kit 3 pares)",
+    "nome": "Meias Performance",
     "categoria": "Meias",
     "cor": "Preto",
     "cor_hex": "#111111",
@@ -32,7 +32,7 @@
   },
   {
     "id": "short-preto-ziper",
-    "nome": "Short com zíper no bolso",
+    "nome": "Short com zíper",
     "categoria": "Bermudas",
     "cor": "Preto",
     "cor_hex": "#111111",
@@ -47,7 +47,7 @@
   },
   {
     "id": "camiseta-hering-azul",
-    "nome": "Camiseta Básica Masculina Manga Curta em Malha H+",
+    "nome": "Hering Básica H+",
     "categoria": "Camisetas",
     "cor": "Azul médio",
     "cor_hex": "#5b7bb5",
@@ -62,7 +62,7 @@
   },
   {
     "id": "camiseta-hering-azul-x7",
-    "nome": "Camiseta Básica Masculina Manga Curta Regular em Malha H+",
+    "nome": "Hering Básica H+ Regular",
     "categoria": "Camisetas",
     "cor": "Azul marinho",
     "cor_hex": "#2b2d4a",
@@ -77,7 +77,7 @@
   },
   {
     "id": "camiseta-hering-verde",
-    "nome": "Camiseta Básica Masculina Manga Curta em Malha H+",
+    "nome": "Hering Básica H+",
     "categoria": "Camisetas",
     "cor": "Verde-oliva",
     "cor_hex": "#4f5440",
@@ -92,7 +92,7 @@
   },
   {
     "id": "tenis-ua-tribase-reps",
-    "nome": "Tênis Tribase Reps",
+    "nome": "Under Armour Tribase Reps",
     "categoria": "Calçados",
     "cor": "Preto e Cinza",
     "cor_hex": "#262626",
@@ -107,7 +107,7 @@
   },
   {
     "id": "bermuda-domyos-fst100-preta",
-    "nome": "Bermuda Masculina de Treino Cardio FST 100",
+    "nome": "Domyos FST 100 (treino)",
     "categoria": "Bermudas",
     "cor": "Preto",
     "cor_hex": "#19171a",
@@ -122,7 +122,7 @@
   },
   {
     "id": "camiseta-run100-dry-preta",
-    "nome": "Camiseta Masculina de Corrida Run 100 Dry",
+    "nome": "Kiprun Run 100 Dry (treino)",
     "categoria": "Camisetas",
     "cor": "Preto",
     "cor_hex": "#1d1d1d",
@@ -138,7 +138,7 @@
   },
   {
     "id": "camiseta-sandrini-preta",
-    "nome": "Camiseta Básica Masculina Sandrini Day (preto)",
+    "nome": "Sandrini Day",
     "categoria": "Camisetas",
     "cor": "Preto",
     "cor_hex": "#060608",
@@ -153,7 +153,7 @@
   },
   {
     "id": "camiseta-sandrini-branca",
-    "nome": "Camiseta Básica Masculina Sandrini Day (branco)",
+    "nome": "Sandrini Day",
     "categoria": "Camisetas",
     "cor": "Branco",
     "cor_hex": "#ededed",
@@ -168,7 +168,7 @@
   },
   {
     "id": "camiseta-sandrini-marinho",
-    "nome": "Camiseta Básica Masculina Sandrini Day (azul marinho)",
+    "nome": "Sandrini Day",
     "categoria": "Camisetas",
     "cor": "Azul marinho",
     "cor_hex": "#041631",
@@ -183,7 +183,7 @@
   },
   {
     "id": "camiseta-lakoss-preta",
-    "nome": "Camiseta Masculina LaKoss Algodão UV50+ Fio 30.1 Premium Gola Redonda",
+    "nome": "LaKoss Algodão Premium",
     "categoria": "Camisetas",
     "cor": "Preto",
     "cor_hex": "#211f20",
