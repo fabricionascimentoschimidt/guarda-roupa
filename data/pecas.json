@@ -225,5 +225,22 @@
     "quantidade": "1",
     "uso": "Casa e rua",
     "observacoes": "Comprada no Mercado Livre (loja oficial MXD Conceito). Cós de elástico com cordão."
+  },
+  {
+    "id": "bermuda-renner-sarja-cinza-claro",
+    "nome": "Renner Sarja Lavada",
+    "categoria": "Bermudas",
+    "cor": "Cinza claro",
+    "cor_hex": "#cfcabd",
+    "marca": "Renner",
+    "tamanho": "M",
+    "tecido": "Sarja lavada, cós com elástico e cordão",
+    "link": "https://www.lojasrenner.com.br/p/bermuda-regular-em-sarja-lavada-com-amarracao-no-cos/-/A-899446747-br.lr",
+    "foto": "img/bermuda-renner-sarja-cinza-claro.png",
+    "data_compra": "",
+    "status": "No guarda-roupa",
+    "quantidade": "1",
+    "uso": "Casa e rua",
+    "observacoes": "Bermuda Regular em Sarja Lavada com Amarração no Cós (Renner). Cinza bem claro puxado pro bege. É a bermuda de sair."
   }
 ]
