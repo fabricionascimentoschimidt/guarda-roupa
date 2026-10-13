@@ -1,5 +1,5 @@
 const estado = { pecas: [], looks: [], cat: 'Todas', cor: 'Todas' };
-const CATEGORIAS = ['Camisetas','Regatas','Polos','Camisas','Bermudas','Moletons','Calçados','Acessórios'];
+const CATEGORIAS = ['Camisetas','Regatas','Polos','Camisas','Bermudas','Moletons','Meias','Calçados','Acessórios'];
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
