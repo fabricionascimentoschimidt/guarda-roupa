@@ -44,5 +44,20 @@
     "data_compra": "2026-10",
     "observacoes": "Qualidade e acabamento muito ruins, tamanho sem padrão (o azul do kit veio bem menor e foi doado). Usa por enquanto. Não comprar mais dessa loja.",
     "status": "No guarda-roupa"
+  },
+  {
+    "id": "camiseta-hering-azul",
+    "nome": "Camiseta Básica Masculina Manga Curta em Malha H+",
+    "categoria": "Camisetas",
+    "cor": "Azul",
+    "cor_hex": "#42526b",
+    "marca": "Hering",
+    "tamanho": "M",
+    "tecido": "Malha H+ 62,5% algodão, 25% viscose, 12,5% poliéster (156 g/m²)",
+    "link": "https://www.hering.com.br/camiseta-basica-masculina-manga-curta-em-malha-h-140maz2en/p",
+    "foto": "img/camiseta-hering-azul.png",
+    "data_compra": "",
+    "observacoes": "Ref. 140MAZ2EN. Modelagem regular (mais reta e rente ao corpo), gola redonda, malha H+ antiodor/antimicrobiana, secagem rápida, não amassa fácil. Medidas M (Hering): comprimento 73 cm, largura 54 cm, manga 23 cm (ombro não informado). Vs. referência Classic M (71/52/48/16): +2 cm comprimento, +2 cm largura. Lavar até 30 °C, não usar secadora.",
+    "status": "No guarda-roupa"
   }
 ]
