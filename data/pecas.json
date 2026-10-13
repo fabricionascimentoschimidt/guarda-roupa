@@ -119,5 +119,21 @@
     "data_compra": "",
     "observacoes": "Ref. 8506243 (Decathlon). Modelagem justa (a loja recomenda um tamanho acima). Tamanho G = quadril 97–103 cm (tabela da Decathlon; sem medidas da peça informadas). Cós elástico com cordão interno, 2 bolsos laterais, leve, secagem rápida, elimina transpiração. Sem foto still no site; imagem recortada da foto de costas com modelo.",
     "status": "A caminho"
+  },
+  {
+    "id": "camiseta-run100-dry-preta",
+    "nome": "Camiseta Masculina de Corrida Run 100 Dry",
+    "categoria": "Camisetas",
+    "cor": "Preto",
+    "cor_hex": "#1d1d1d",
+    "marca": "Decathlon",
+    "tamanho": "G",
+    "quantidade": "2 peças",
+    "tecido": "100% poliéster (mesh microperfurado, secagem rápida)",
+    "link": "https://www.decathlon.com.br/camiseta-masculina-de-corrida-run-100-dry-preta-preto-8985259-decathlon/p",
+    "foto": "img/camiseta-run100-dry-preta.png",
+    "data_compra": "",
+    "observacoes": "Uso: academia. 2 peças iguais. Ref. 8985259. Comprimento regular, gola redonda, tecido leve e respirável. Tamanho G = tórax 100–104 cm, cintura 85–89 cm (tabela corporal da Decathlon; medidas da peça não informadas). Lavar até 30 °C, sem alvejante, secadora ou ferro.",
+    "status": "A caminho"
   }
 ]
