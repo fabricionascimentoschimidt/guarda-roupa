@@ -95,7 +95,7 @@
     "nome": "Tênis Tribase Reps",
     "categoria": "Calçados",
     "cor": "Preto e Cinza",
-    "cor_hex": "#1c1c1e",
+    "cor_hex": "#262626",
     "marca": "Under Armour",
     "tamanho": "40",
     "tecido": "Cabedal em mesh/têxtil respirável com painel lateral em TPU laminado; entressola Micro G® + palmilha Cellfit 4 mm; solado borracha TriBase™",
@@ -103,6 +103,21 @@
     "foto": "img/tenis-ua-tribase-reps.png",
     "data_compra": "",
     "observacoes": "Tênis de treino (cross-training/funcional), pisada neutra, forro poliéster com espuma, cadarço achatado, puxador no calcanhar. Peso informado: 269–305 g (varia por tamanho/loja). Specs de underarmour.com.br/Shoestock/Trilha (Netshoes bloqueou acesso).",
+    "status": "A caminho"
+  },
+  {
+    "id": "bermuda-domyos-fst100-preta",
+    "nome": "Bermuda Masculina de Treino Cardio FST 100",
+    "categoria": "Bermudas",
+    "cor": "Preto",
+    "cor_hex": "#19171a",
+    "marca": "Domyos",
+    "tamanho": "G",
+    "tecido": "100% poliéster (tecido principal e forro dos bolsos; reciclado PET)",
+    "link": "https://www.decathlon.com.br/bermuda-masculina-de-treino-cardio-fst-100-preto-8506243-domyos/p",
+    "foto": "img/bermuda-domyos-fst100-preta.png",
+    "data_compra": "",
+    "observacoes": "Ref. 8506243 (Decathlon). Modelagem justa (a loja recomenda um tamanho acima). Tamanho G = quadril 97–103 cm (tabela da Decathlon; sem medidas da peça informadas). Cós elástico com cordão interno, 2 bolsos laterais, leve, secagem rápida, elimina transpiração. Sem foto still no site; imagem recortada da foto de costas com modelo.",
     "status": "A caminho"
   }
 ]
