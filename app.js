@@ -22,7 +22,7 @@ function armario(){
   $('#contagem').textContent = `${n} ${n===1?'peça':'peças'}`;
   if(!estado.pecas.length){ $('#grade').innerHTML = vazio('🧥','Seu armário ainda está vazio.','Mande a foto da sua primeira peça pro Estilo.'); $('#grade').style.display='block'; return; }
   $('#grade').style.display='';
-  $('#grade').innerHTML = n ? lista.map(p => `<button class="card" data-id="${esc(p.id)}"><div class="foto"><img src="${esc(p.foto)}" alt="${esc(p.nome)}" loading="lazy"></div><div class="nome">${esc(p.nome)}</div></button>`).join('')
+  $('#grade').innerHTML = n ? lista.map(p => `<button class="card" data-id="${esc(p.id)}"><div class="foto"><img src="${esc(p.foto)}?v=${Date.now()}" alt="${esc(p.nome)}" loading="lazy"></div><div class="nome">${esc(p.nome)}</div></button>`).join('')
     : `<div style="grid-column:1/-1">${vazio('🔍','Nada por aqui.','Nenhuma peça com esses filtros.')}</div>`;
 }
 
@@ -31,7 +31,7 @@ function looks(){
   $('#lista-looks').innerHTML = estado.looks.map(l => {
     const ps = (l.pecas||[]).map(id => estado.pecas.find(p => p.id===id)).filter(Boolean);
     return `<article class="look"><h3>${esc(l.nome)}</h3><p class="oc">${esc(l.ocasiao)}</p>
-      <div class="composicao">${ps.map(p => `<button data-id="${esc(p.id)}"><img src="${esc(p.foto)}" alt="${esc(p.nome)}"></button>`).join('')}</div>
+      <div class="composicao">${ps.map(p => `<button data-id="${esc(p.id)}"><img src="${esc(p.foto)}?v=${Date.now()}" alt="${esc(p.nome)}"></button>`).join('')}</div>
       ${l.observacoes?`<p class="obs">${esc(l.observacoes)}</p>`:''}</article>`;
   }).join('');
 }
@@ -42,7 +42,7 @@ function abrir(id){
   const fmt = (k,v) => k==='link' ? `<a href="${esc(v)}" target="_blank" rel="noopener">Ver produto</a>`
     : k==='cor' ? `<span class="bolinha" style="display:inline-block;vertical-align:middle;background:${esc(p.cor_hex||'#888')}"></span> ${esc(v)}`
     : k==='data_compra' && /^\d{4}-\d{2}-\d{2}$/.test(v) ? v.split('-').reverse().join('/') : esc(v);
-  $('#folha-conteudo').innerHTML = `<div class="det-foto"><img src="${esc(p.foto)}" alt="${esc(p.nome)}"></div><h2>${esc(p.nome)}</h2>
+  $('#folha-conteudo').innerHTML = `<div class="det-foto"><img src="${esc(p.foto)}?v=${Date.now()}" alt="${esc(p.nome)}"></div><h2>${esc(p.nome)}</h2>
     <dl class="campos">${ROTULOS.filter(([k]) => p[k]).map(([k,r]) => `<dt>${r}</dt><dd>${fmt(k,p[k])}</dd>`).join('')}</dl>`;
   $('#fundo').hidden = false; $('#folha').classList.add('aberta'); $('#folha').setAttribute('aria-hidden','false');
 }
