@@ -208,5 +208,22 @@
     "observacoes": "Peça avulsa. Gola redonda, manga curta, proteção UV FPU 50+, modelagem Slim/Regular, tecido leve sem elasticidade, costura reforçada em ombros e gola. Medidas da peça no M: ombro a ombro 42 cm, largura 52 cm, comprimento 69 cm; manga não informada. Vs. referência Classic M (71/52/48/16): comprimento −2 cm, largura igual, ombro −6 cm. Lavável na máquina; pode encolher levemente na primeira lavagem. Marca no anúncio da Amazon: 'Genérico'.",
     "status": "A caminho",
     "uso": "Casa e rua"
+  },
+  {
+    "id": "bermuda-mxd-moletom-grafite-azulado",
+    "nome": "MXD Moletom",
+    "categoria": "Bermudas",
+    "cor": "Grafite azulado",
+    "cor_hex": "#4f5878",
+    "marca": "MXD Conceito",
+    "tamanho": "G",
+    "tecido": "Moletom leve, sem pelúcia",
+    "link": "https://produto.mercadolivre.com.br/MLB-1224675272-bermuda-moletom-masculina-mxd-conceito-cinza-escuro-_JM",
+    "foto": "img/bermuda-mxd-moletom-grafite-azulado.png",
+    "data_compra": "2026-10-13",
+    "status": "A caminho",
+    "quantidade": "1",
+    "uso": "Casa e rua",
+    "observacoes": "Comprada no Mercado Livre (loja oficial MXD Conceito). Cós de elástico com cordão."
   }
 ]
