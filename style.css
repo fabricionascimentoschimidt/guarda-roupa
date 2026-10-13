@@ -1,0 +1,47 @@
+:root{--bg:#1f2119;--bg2:#2a2c22;--card:#34362b;--txt:#ecebe3;--mute:#a3a391;--acc:#c9b77a;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;min-height:100vh;padding-bottom:env(safe-area-inset-bottom)}
+.topo{position:sticky;top:0;z-index:5;background:rgba(31,33,25,.94);backdrop-filter:blur(10px);padding:18px 16px 0}
+h1{font-family:Georgia,serif;font-weight:400;font-size:1.5rem;letter-spacing:.3px}
+h1 span{color:var(--acc);font-style:italic}
+.abas{display:flex;gap:24px;margin-top:12px;border-bottom:1px solid #3b3d31}
+.aba{background:none;border:0;color:var(--mute);font-size:1rem;padding:10px 0;border-bottom:2px solid transparent;cursor:pointer}
+.aba.ativa{color:var(--txt);border-color:var(--acc)}
+main{max-width:900px;margin:0 auto;padding:14px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;background:var(--bg2);color:var(--txt);border:1px solid #3e4034;border-radius:999px;padding:7px 14px;font-size:.85rem;cursor:pointer;display:flex;align-items:center;gap:6px}
+.chip.ativo{background:var(--acc);color:#1f2119;border-color:var(--acc)}
+.bolinha{width:12px;height:12px;border-radius:50%;border:1px solid #fff4}
+.contagem{color:var(--mute);font-size:.85rem;margin:4px 2px 12px}
+.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+@media(max-width:340px){.grade{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:700px){.grade{grid-template-columns:repeat(4,1fr);gap:14px}}
+.card{background:var(--card);border-radius:var(--r);overflow:hidden;cursor:pointer;border:0;color:inherit;text-align:left;transition:transform .15s}
+.card:active{transform:scale(.97)}
+.card .foto{aspect-ratio:1;display:flex;align-items:center;justify-content:center;padding:10px;background:radial-gradient(circle at 50% 40%,#45473a,#34362b)}
+.card img{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 6px 8px #0006)}
+.card .nome{font-size:.75rem;padding:6px 10px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--mute)}
+.vazio{text-align:center;padding:60px 24px;color:var(--mute);line-height:1.5}
+.vazio .icone{font-size:3rem;margin-bottom:12px}
+.vazio strong{display:block;color:var(--txt);font-size:1.05rem;margin-bottom:6px}
+.lista-looks{display:grid;gap:14px}
+@media(min-width:700px){.lista-looks{grid-template-columns:1fr 1fr}}
+.look{background:var(--card);border-radius:var(--r);padding:14px}
+.look h3{font-family:Georgia,serif;font-weight:400}
+.look .oc{color:var(--acc);font-size:.8rem;margin:2px 0 10px}
+.composicao{display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:8px;background:var(--bg2);border-radius:14px;padding:10px}
+.composicao button{background:none;border:0;cursor:pointer;aspect-ratio:1;display:flex;align-items:center;justify-content:center}
+.composicao img{max-width:100%;max-height:100%;object-fit:contain;filter:drop-shadow(0 4px 6px #0006)}
+.look .obs{color:var(--mute);font-size:.85rem;margin-top:10px}
+.fundo{position:fixed;inset:0;background:#000a;z-index:9}
+.folha{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--bg2);border-radius:24px 24px 0 0;max-height:88vh;overflow-y:auto;padding:12px 20px 32px;transform:translateY(100%);transition:transform .25s ease;max-width:640px;margin:0 auto}
+.folha.aberta{transform:none}
+.alca{width:40px;height:4px;background:#555846;border-radius:4px;margin:0 auto 10px}
+.fechar{position:absolute;right:14px;top:10px;background:none;border:0;color:var(--mute);font-size:1.8rem;cursor:pointer}
+.det-foto{display:flex;justify-content:center;background:radial-gradient(circle,#45473a,#2a2c22);border-radius:var(--r);padding:16px;margin-bottom:14px}
+.det-foto img{max-height:280px;max-width:100%;object-fit:contain}
+.folha h2{font-family:Georgia,serif;font-weight:400;margin-bottom:12px}
+.campos{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:.9rem}
+.campos dt{color:var(--mute)}
+.campos a{color:var(--acc)}
