@@ -1,4 +1,4 @@
-const estado = { pecas: [], looks: [], cat: 'Todas', cor: 'Todas', uso: 'Casa e rua' };
+const estado = { pecas: [], looks: [], cat: 'Todas', cor: 'Todas', uso: 'Dia a dia' };
 const CATEGORIAS = ['Camisetas','Regatas','Polos','Camisas','Bermudas','Moletons','Meias','Calçados','Acessórios'];
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -10,7 +10,7 @@ function qtd(p){ const m=String(p.quantidade||'').match(/\d+/); return m?+m[0]:1
 function vazio(icone, titulo, texto){ return `<div class="vazio"><div class="icone">${icone}</div><strong>${titulo}</strong>${texto}</div>`; }
 
 function chips(){
-  $('#chips-uso').innerHTML = ['Casa e rua','Academia','Tudo'].map(u => `<button class="chip uso ${u===estado.uso?'ativo':''}" data-uso="${u}">${u}</button>`).join('');
+  $('#chips-uso').innerHTML = ['Dia a dia','Sair','Academia','Tudo'].map(u => `<button class="chip uso ${u===estado.uso?'ativo':''}" data-uso="${u}">${u}</button>`).join('');
   const base = estado.pecas.filter(p => estado.uso==='Tudo'||p.uso===estado.uso);
   const cats = ['Todas', ...CATEGORIAS.filter(c => base.some(p => p.categoria === c))];
   $('#chips-cat').innerHTML = cats.map(c => `<button class="chip ${c===estado.cat?'ativo':''}" data-cat="${esc(c)}">${esc(c)}</button>`).join('');
