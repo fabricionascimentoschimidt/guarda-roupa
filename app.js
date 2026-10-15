@@ -22,6 +22,7 @@ function chips(){
 function armario(){
   chips();
   const lista = estado.pecas.filter(p => (estado.uso==='Tudo'||p.uso===estado.uso) && (estado.cat==='Todas'||p.categoria===estado.cat) && (estado.cor==='Todas'||p.cor===estado.cor));
+  const ORDEM=['Camisetas','Camisas','Polos','Bermudas','Shorts','Calças','Meias','Calçados'];const rk=c=>{const i=ORDEM.indexOf(c);return i<0?99:i};lista.sort((a,b)=>rk(a.categoria)-rk(b.categoria));
   const n = lista.length;
   $('#contagem').textContent = `${n} ${n===1?'peça':'peças'}`;
   if(!estado.pecas.length){ $('#grade').innerHTML = vazio('🧥','Seu armário ainda está vazio.','Mande a foto da sua primeira peça pro Estilo.'); $('#grade').style.display='block'; return; }
